@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Services page of Your Website" />
+  <title>Your Website — Services</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header, footer { background:#4f7c82; color:#93b1b5; padding: 16px; text-align: center;}
+    nav ul { display:flex; gap:16px; list-style:none; padding:0; margin:8px 0 0; }
+    nav a { color:#fff; text-decoration:none; }
+    nav a[aria-current="page"] { text-decoration: underline; font-weight: 700; }
+    main { padding: 24px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { border:1px solid #eee; border-radius:8px; padding:16px; background:#fff; }
+    .card a { display:inline-block; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Attendance Checker</h1>
+  <nav aria-label = "Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h2>Our Services</h2>
+      <p>Attendance recording.</p>
+      <p>Attendance monitoring</p>
+      <p>Student attendance report</p>
+      <p>User login system</p>
+    </header>
+
+    <section aria-label="Service list" class="grid">
+      <article class="card">
+        <h3>Service A</h3>
+        <p>Our system provides easy and efficient attendance monitoring for schools. It allows teachers to record attendace digitally.</p>
+        <a href="contact.html">Inquire →</a>
+      </article>
+      <article class="card">
+        
+        
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Website. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
